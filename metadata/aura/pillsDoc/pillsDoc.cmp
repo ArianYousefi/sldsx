@@ -38,13 +38,13 @@
       
    <sldsx:container class="demo-container" size="large" align="center">
       <h2 class="slds-text-heading--medium slds-m-bottom--large">Pills: Potrait</h2>
-      <sldsx:pill label="Marc Benioff" press="{!c.handlePress}" avatarSrc="/resource/marc" avatarSize="x-small" avatarType="circle" avatarLabel="Marc">
+      <sldsx:pill label="Marc Benioff" press="{!c.handlePress}" avatarSrc="/resource/slds/assets/images/avatar1.jpg" avatarSize="x-small" avatarType="circle" avatarLabel="Marc">
         <sldsx:button press="{!c.handleClosePress}" type="bare" iconCategory="utility" iconName="close" iconType="bare"/>
       </sldsx:pill>
       <br/>
       Code:
       <sldsx:code >
-      &lt;sldsx:pill label=&quot;Marc Benioff&quot; press=&quot;myJSHandler&quot; avatarSrc=&quot;/resource/marc&quot; avatarSize=&quot;x-small&quot; avatarType=&quot;circle&quot; avatarLabel=&quot;Marc&quot;&gt;
+      &lt;sldsx:pill label=&quot;Marc Benioff&quot; press=&quot;myJSHandler&quot; avatarSrc=&quot;/resource/slds/assets/images/avatar1.jpg&quot; avatarSize=&quot;x-small&quot; avatarType=&quot;circle&quot; avatarLabel=&quot;Marc&quot;&gt;
       &nbsp;&nbsp;&nbsp;&nbsp;&lt;sldsx:button press=&quot;myCloseHandler&quot; type=&quot;bare&quot; iconCategory=&quot;utility&quot; iconName=&quot;close&quot; iconType=&quot;bare&quot;/&gt;
       &lt;/sldsx:pill&gt;
       </sldsx:code>

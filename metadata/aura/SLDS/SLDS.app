@@ -3,13 +3,13 @@
     <div class="slds">
         <sldsx:grid wrap="true" class="topHeader">
             <sldsx:col size="1-of-1" mdSize="1-of-12" lgSize="1-of-12">
-         		<img src="/resource/logo" label="logo" size="large"/>
+         		<img src="https://developer.salesforce.com/resource/images/salesforce-developer-network-logo_1.png" label="logo" size="large"/>
             </sldsx:col>
                 <sldsx:col size="1-of-1" mdSize="10-of-12" lgSize="10-of-12"> 
                 <h1 class="slds-text-heading--large slds-truncate">Salesforce Lightning Design System</h1>
             </sldsx:col>
         </sldsx:grid>
-        <sldsx:grid wrap="true">
+        <sldsx:grid wrap="true" style="margin-right:100px">
           <sldsx:col size="1-of-1" mdSize="2-of-12" lgSize="2-of-12" class="sidebar">
              
                <sldsx:list direction="block">

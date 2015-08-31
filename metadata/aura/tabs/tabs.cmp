@@ -17,7 +17,7 @@
   		<ul class="{!v.gen_nav_class}" role="presentation">
             <aura:iteration items="{!v.nav_items}" var="nav_item" indexVar="idx">
                 <li class="{!nav_item.class + (nav_item.active == true ? ' slds-active' : '')}" title="{!nav_item.title}" role="presentation">
-                  <a href="#" role="tab" tabindex="{!idx}" aria-selected="{!nav_item.active == true ? 'true' : 'false'}" onclick="{!c.selectTab}">{!nav_item.title}</a>
+                  <a role="tab" tabindex="{!idx}" aria-selected="{!nav_item.active == true ? 'true' : 'false'}" onclick="{!c.selectTab}">{!nav_item.title}</a>
                 </li>
             </aura:iteration>
         </ul>      
