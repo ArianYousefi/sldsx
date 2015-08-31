@@ -1,4 +1,6 @@
 #Using SLDS In Lightning Components Tutorial
+
+###Table Of Contents
 <a href="#module-1-introduction">Module 1: Introduction</a>
 
 <a href="#module-2-decompose-the-app-into-components">Module 2: Decompose The App Into Components</a>

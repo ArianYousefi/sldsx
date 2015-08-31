@@ -17,7 +17,7 @@ Needs Winter '16
 
 ## SLDSX Tutorial
 We've created a tutorial to explain how to use it. Please go through the <a href="https://github.com/ForceDotComLabs/sldsx/blob/master/tutorial-SLDSX/tutorial.md" target="_blank">tutorial here</a>.
-![image](tutorial-sldsx/accountsAppPic.png)
+![image](tutorial-SLDSX/accountsAppPic.png)
 
 ####Installation
 This project is distributed as an unmanaged package. The package has all the components, and latest version of SLDS framework (CSS, fonts, icons etc). To use it, simply install the package, load SLDS static resource and use individual components in your app.
