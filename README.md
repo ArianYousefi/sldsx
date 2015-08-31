@@ -7,9 +7,17 @@ SLDS Sample Components is an open-source project to provide a set of common Ligh
 
 Note: All components use `sldsx` namespace.
 
-## Tutorial
-We've created a tutorial to explain how to use it. Please go through the <a href="https://github.com/ForceDotComLabs/sldsx/blob/master/tutorial/tutorial.md" target="_blank">tutorial here</a>.
-![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/accountsAppPic.png?token=AAmOocLC71enF48M39WloAY23uQRdstWks5V3MvDwA%3D%3D)
+## Prerequisite:
+Needs Winter '16
+
+<image src="tutorial/images/winter16.png" />
+
+
+
+
+## SLDSX Tutorial
+We've created a tutorial to explain how to use it. Please go through the <a href="https://github.com/ForceDotComLabs/sldsx/blob/master/tutorial-SLDSX/tutorial.md" target="_blank">tutorial here</a>.
+![image](tutorial-sldsx/accountsAppPic.png)
 
 ####Installation
 This project is distributed as an unmanaged package. The package has all the components, and latest version of SLDS framework (CSS, fonts, icons etc). To use it, simply install the package, load SLDS static resource and use individual components in your app.

@@ -15,7 +15,7 @@ This tutorial is created to help you learn how to use SLDS framework in custom L
 3. Check `Enable Lightning Components`
 
 
-	![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/enableLightningComponentsPic.png?token=AAmOoXNBdvBa7YlhYyoaAF7Y3rpSMB2pks5V3LWIwA%3D%3D)
+	![image](enableLightningComponentsPic.png)
 
 4. **Register My Domain**
  
@@ -38,7 +38,7 @@ This tutorial is created to help you learn how to use SLDS framework in custom L
     
     4.6 Press `Push to users` button.
 
-    ![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/myDomainPic.png?token=AAmOodzO9e8SilKOtMrEK3Jju5FAtZ5sks5V3LrEwA%3D%3D)
+    ![image](myDomainPic.png)
     
 
 ####Step 2 - Installation
@@ -69,7 +69,7 @@ Lightning auto-generates documentation for all components based on the source co
 2. Click on `Components > SLDSX` to see all the components in `SLDSX` namespace. 
 
 
-<image src="https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/auraDocsPic.png?token=AAmOoTO4_cqHfJtcvkz4oG5OiiBasPNBks5V3LlCwA%3D%3D"/>
+<image src="auraDocsPic.png?token=AAmOoTO4_cqHfJtcvkz4oG5OiiBasPNBks5V3LlCwA%3D%3D"/>
 
 #Part 2 - Building A Hello World App
 ####Step 1 - Load SLDS Framework
@@ -81,7 +81,7 @@ Lightning auto-generates documentation for all components based on the source co
 4. Scroll through the source.
 
 Notice that the code loads SLDS as a static resource and also uses `slds` div parent element to CSS namespace the component so that CSS doesn't bleed into other components. This is how you load SLDS framework into your Lightning app or component.  
-<image src="https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/sldsNSPic.png?token=AAmOoWs9vG13Omsxtqe5C_Zs3eTkWevAks5V3LlvwA%3D%3D"/>
+<image src="sldsNSPic.png?token=AAmOoWs9vG13Omsxtqe5C_Zs3eTkWevAks5V3LlvwA%3D%3D"/>
 
 Note: You don't need to load it in every component, you just need to load it in the main component or app that has all other components.
 
@@ -98,7 +98,7 @@ Note: You don't need to load it in every component, you just need to load it in 
 	```
 4. Press `Preview` and you'll see:
 
-	![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/buttonPic.png?token=AAmOoS1AZNsJZcfOB9Vfy44ScYDyspBiks5V3LmJwA%3D%3D)
+	![image](buttonPic.png)
 
 
 ####Step 3 - Change An Attribute
@@ -111,7 +111,7 @@ Every SLDSX components has multiple attributes that can have various values. Com
 
 4. Press 'Preview` and you'll see:
 
-	![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/buttonBrandPic.png?token=AAmOobdk28dFLgvk90Tl8hikyVHnzN1Aks5V3LmlwA%3D%3D)
+	![image](buttonBrandPic.png)
 
 Note: You can use  AuraDocs app (Step 3) to see list of attributes and possible values for each attribute for a given component.
 
@@ -175,25 +175,25 @@ If you want just 1 cell to occupy 1/12 the space, simply use: `1-of-12`. This al
 
 ```
 
-![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/gridSystemPic.png?token=AAmOoV9r6IC9qr3Hyo7H_D1ZZ-eqor_Vks5V3LnCwA%3D%3D)
+![image](gridSystemPic.png)
 	
 
 Note: Notice we are also using `wrap=true` attribute. This tells the Grid System to wrap and move the cell to the next row below if there are more cells than it can fit.
 
-![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/wrapPic.png?token=AAmOoVUN-dxPJNfyY3CiEesDbW1NcNo3ks5V3LnkwA%3D%3D)
+![image](wrapPic.png)
 	
 ####Step 2 - Multiple Sizes For Various Screensizes
 In most apps you want to show different number of items depending on the screensize. 
 
 For example, if viewed from a mobile device you may want to show just one cell/item per row, but if viewed from a medium size screen like a tablet, you may want to show 6 cells/items in a single row. And finally if viewed from a large screen, you may want to show 12 cells/items in a single row.
 In Large Screen (e.g. laptops):
-![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/largeScreenPic.png?token=AAmOoWOeaKZrpOTAMcKN2UIFmoKT6bI5ks5V3Ln-wA%3D%3D)
+![image](largeScreenPic.png)
 
 In Medium Screen (e.g. tablets):
-		![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/mdScreenPic.png?token=AAmOoTq6WcjvRbvngEH7HtFm4mX2o6Drks5V3LoTwA%3D%3D)
+		![image](mdScreenPic.png)
 
 In Small Screens (e.g. mobile phones): 		
-![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/smScreenPic.png?token=AAmOoZA7wGZmJya9F54yolMM8pJpUyUXks5V3LoxwA%3D%3D)
+![image](smScreenPic.png)
 
 Thankfully, Grid System offers small, medium and large size attributes that can be used in this situation.
 In SLDSX components, they correspond to "size", "mdSize" and "lgSize" respectively.
@@ -223,7 +223,7 @@ In SLDSX components, they correspond to "size", "mdSize" and "lgSize" respective
 ```
 #Part 4 - Building An Accounts List App
 ####This app shows you how to use raw SLDS markup along with SLDSX components.
-![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/accountsAppPic.png?token=AAmOocLC71enF48M39WloAY23uQRdstWks5V3MvDwA%3D%3D)
+![image](accountsAppPic.png)
 SLDS framework provides a whole host of components that are not part of these sample components like: tables, headers and so on but we can use both togeather.
 In this example, we will build a simple Accounts app that shows list of accounts in a table.
 We'll use raw CSS instead of SLDSX components just to show that you can use it directly as well. 
@@ -368,7 +368,7 @@ Helper is used to interact with the server.
 4. Press `Update Preview` in the HelloSLDSX.app and you should see a table with SLDSX buttons in each row.
 
 5. Press the `Details` button and you should see the Account Id in an alert box.
-![image](https://raw.githubusercontent.com/ForceDotComLabs/sldsx/master/tutorial/accountsAppWithAccIdPic.png?token=AAmOoahZ4gIK2jx-72lVc-ipaSjw04SYks5V3M2KwA%3D%3D)
+![image](accountsAppWithAccIdPic.png)
 
 #Summary
 Congratulations! You just learnt how to install SLDS framework, how to use the Sample components and also learnt how to use both SLDS framework and sample components togeather. From this point on, you can create your own SLDS component and use it in your Lightning projects.
