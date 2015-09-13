@@ -68,6 +68,9 @@ Please complete this step ONLY if you see this logo.
 
     ![image](images/myDomainPic.png)
     
+    > **Note:** It can take several minutes for the MyDomain feature to finish its provisioning process as it requires propagation of the new domain to Salesforce's DNS servers. You will be notified by email once the domain registration is complete. 
+
+    > For more information about the MyDomain feature see the [online help](https://help.salesforce.com/HTViewHelpDoc?id=faq_domain_name_what.htm&language=en_US) in your org. 
 
 ###Step 2 - Install Lightning Design System As A Static Resource
 
