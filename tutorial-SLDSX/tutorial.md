@@ -39,6 +39,10 @@ This tutorial is created to help you learn how to use SLDS framework in custom L
     4.6 Press `Push to users` button.
 
     ![image](myDomainPic.png)
+
+    > **Note:** It can take several minutes for the MyDomain feature to finish its provisioning process as it requires propagation of the new domain to Salesforce's DNS servers. You will be notified by email once the domain registration is complete. 
+
+    > For more information about the MyDomain feature see the [online help](https://help.salesforce.com/HTViewHelpDoc?id=faq_domain_name_what.htm&language=en_US) in your org. 
     
 
 ####Step 2 - Installation
