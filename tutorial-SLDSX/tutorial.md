@@ -379,6 +379,6 @@ Helper is used to interact with the server.
 ![image](accountsAppWithAccIdPic.png)
 
 # Summary
-Congratulations! You just learned how to install the SLDS framework, how to use the Sample components and also learnt how to use both SLDS framework and sample components togeather. From this point on, you can create your own SLDS component and use it in your Lightning projects.
+Congratulations! You just learned how to install the SLDS framework, how to use the Sample components and also learned how to use both SLDS framework and sample components togeather. From this point on, you can create your own SLDS component for use in your Lightning projects.
 
 You can also contribute to the open-source project here: [https://github.com/ForceDotComLabs/sldsx](https://github.com/ForceDotComLabs/sldsx)
