@@ -137,7 +137,7 @@ Every SLDSX component has a `press` attribute that allows us to add interact wit
 			alert('Button Clicked!');
 		}
 	})
-		```
+	```
 
 3. Click on the 'Preview' button or simply refresh browser.
 4. Click on the button
@@ -246,10 +246,9 @@ We'll use raw CSS instead of SLDSX components just to show that you can use it d
 	public class AccountsController {
 		@AuraEnabled
 		public static List<Account> getAccounts() {
-			return [SELECT Id, Name, Industry, Type, NumberOfEmployees,
-			TickerSymbol, Phone, BillingStreet, BillingCity,
-			BillingState, BillingPostalCode FROM Account ORDER BY
-			CreatedDate ASC];
+			return [SELECT Id, Name, Industry, Type, NumberOfEmployees, TickerSymbol,
+			Phone, BillingStreet, BillingCity, BillingState, BillingPostalCode
+			FROM Account ORDER BY CreatedDate ASC];
 		}   
 	}
 	```
