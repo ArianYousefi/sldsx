@@ -72,8 +72,7 @@ Lightning auto-generates documentation for all components based on the source co
 1. Open `{yourOrg}/auradocs/reference.app`
 2. Click on `Components > SLDSX` to see all the components in `SLDSX` namespace.
 
-
-<image src="auraDocsPic.png?token=AAmOoTO4_cqHfJtcvkz4oG5OiiBasPNBks5V3LlCwA%3D%3D"/>
+![image](auraDocsPic.png)
 
 # Part 2 - Building A Hello World App
 #### Step 1 - Load SLDS Framework
@@ -84,8 +83,9 @@ Lightning auto-generates documentation for all components based on the source co
 3. Find `SLDS.app`in the dialog
 4. Scroll through the source.
 
-Notice that the code loads SLDS as a static resource and also uses `slds` div parent element to CSS namespace the component so that CSS doesn't bleed into other components. This is how you load SLDS framework into your Lightning app or component.  
-<image src="sldsNSPic.png?token=AAmOoWs9vG13Omsxtqe5C_Zs3eTkWevAks5V3LlvwA%3D%3D"/>
+Notice that the code loads SLDS as a static resource and also uses `slds` div parent element to CSS namespace the component so that CSS doesn't bleed into other components. This is how you load SLDS framework into your Lightning app or component.
+
+![image](sldsNSPic.png?)
 
 Note: You don't need to load it in every component, you just need to load it in the main component or app that has all other components.
 
@@ -93,13 +93,12 @@ Note: You don't need to load it in every component, you just need to load it in 
 1. In Developer Console, Click on `New > Lightning Application`
 2. Enter `HelloSLDSX` and press `Submit`
 3. Add the following under `<Application>` tag to load SLDS framework and add a button.
-	```    
-	<ltng:require styles="/resource/sldsx__sds/assets/styles/salesforce-lightning-design-system-vf.css"/>
-	<div class="slds">
-      <c:button type="neutral">Button</c:button>
-    </div>
-
-	```
+```xml
+<ltng:require styles="/resource/sldsx__sds/assets/styles/salesforce-lightning-design-system-vf.css"/>
+<div class="slds">
+	<c:button type="neutral">Button</c:button>
+</div>
+```
 4. Press `Preview` and you'll see:
 
 	![image](buttonPic.png)
@@ -109,7 +108,8 @@ Note: You don't need to load it in every component, you just need to load it in 
 Every SLDSX components has multiple attributes that can have various values. Component look and feel changes based on attribute values.
 
 1. Let's change our button's `type` attribute to `brand`.
-	```
+
+	```xml
 	<c:button type="brand">Button</c:button>
 	```
 
@@ -125,19 +125,19 @@ Note: You can use  AuraDocs app (Step 3) to see list of attributes and possible 
 Every SLDSX component has a `press` attribute that allows us to add interact with press(button click) event in JavaScript controller.
 
 1. Add a `press="{!c.myButtonHandler}"` to our button.
-	```
+	```xml
 	<c:button press="{!c.myButtonHandler}" type="brand">Button</c:button>
 	```
 2. In Developer Console, click on `Controller` button on the right-side pane.
 2. Replace the code with the following:
 
-	```
+	```javascript
 	({
 		myButtonHandler : function(component, event, helper) {
 			alert('Button Clicked!');
 		}
 	})
-	```
+		```
 
 3. Click on the 'Preview' button or simply refresh browser.
 4. Click on the button
@@ -153,28 +153,29 @@ Grid system helps arrange the content in grids of 1 cell (container) upto 12 cel
 For example:
 If you want just 1 cell to occupy entire space, simply use: `1-of-1`.
 
-```
+```xml
 <c:grid  wrap="true">
- <c:col size="1-of-1">1-of-1</c:col>
+	<c:col size="1-of-1">1-of-1</c:col>
 </c:grid>
- ```
+```
+
 
 If you want just 1 cell to occupy 1/12 the space, simply use: `1-of-12`. This allows you to have 12 such cells in a single row.
 
-```
+```xml
 <c:grid  wrap="true">
-      <c:col size="1-of-12">1-of-12</c:col>
-            <c:col size="1-of-12">1-of-12</c:col>
-            <c:col size="1-of-12">1-of-12</c:col>
-            <c:col size="1-of-12">1-of-12</c:col>
-            <c:col size="1-of-12">1-of-12</c:col>
-            <c:col size="1-of-12">1-of-12</c:col>
-            <c:col size="1-of-12">1-of-12</c:col>
-            <c:col size="1-of-12">1-of-12</c:col>
-            <c:col size="1-of-12">1-of-12</c:col>
-            <c:col size="1-of-12">1-of-12</c:col>
-            <c:col size="1-of-12">1-of-12</c:col>
-            <c:col size="1-of-12">1-of-12</c:col>
+  <c:col size="1-of-12">1-of-12</c:col>
+  <c:col size="1-of-12">1-of-12</c:col>
+  <c:col size="1-of-12">1-of-12</c:col>
+  <c:col size="1-of-12">1-of-12</c:col>
+  <c:col size="1-of-12">1-of-12</c:col>
+  <c:col size="1-of-12">1-of-12</c:col>
+  <c:col size="1-of-12">1-of-12</c:col>
+  <c:col size="1-of-12">1-of-12</c:col>
+  <c:col size="1-of-12">1-of-12</c:col>
+  <c:col size="1-of-12">1-of-12</c:col>
+  <c:col size="1-of-12">1-of-12</c:col>
+  <c:col size="1-of-12">1-of-12</c:col>
 </c:grid>
 
 ```
@@ -208,26 +209,28 @@ In SLDSX components, they correspond to "size", "mdSize" and "lgSize" respective
 4. Squeeze the browser's width (not the height), you'll see that at certain point,it starts to show only 6 items per row and show the remaining 6 items in the 2nd row.
 5. Squeeze the browser's width (not the height) all the way to the smallest width. You'll see just 1 item per row and the remaining 11 items are displayed in different rows below.
 
-```
+```xml
 <c:grid  wrap="true">
-      <c:col size="1-of-1" mdSize="1-of-6" lgSize="1-of-12">1-of-12</c:col>
-      <c:col size="1-of-1" mdSize="1-of-6" lgSize="1-of-12">1-of-12</c:col>
-      <c:col size="1-of-1" mdSize="1-of-6" lgSize="1-of-12">1-of-12</c:col>
-      <c:col size="1-of-1" mdSize="1-of-6" lgSize="1-of-12">1-of-12</c:col>
-      <c:col size="1-of-1" mdSize="1-of-6" lgSize="1-of-12">1-of-12</c:col>
-      <c:col size="1-of-1" mdSize="1-of-6" lgSize="1-of-12">1-of-12</c:col>
-      <c:col size="1-of-1" mdSize="1-of-6" lgSize="1-of-12">1-of-12</c:col>
-      <c:col size="1-of-1" mdSize="1-of-6" lgSize="1-of-12">1-of-12</c:col>
-      <c:col size="1-of-1" mdSize="1-of-6" lgSize="1-of-12">1-of-12</c:col>
-      <c:col size="1-of-1" mdSize="1-of-6" lgSize="1-of-12">1-of-12</c:col>
-      <c:col size="1-of-1" mdSize="1-of-6" lgSize="1-of-12">1-of-12</c:col>
-      <c:col size="1-of-1" mdSize="1-of-6" lgSize="1-of-12">1-of-12</c:col>
+  <c:col size="1-of-1" mdSize="1-of-6" lgSize="1-of-12">1-of-12</c:col>
+  <c:col size="1-of-1" mdSize="1-of-6" lgSize="1-of-12">1-of-12</c:col>
+  <c:col size="1-of-1" mdSize="1-of-6" lgSize="1-of-12">1-of-12</c:col>
+  <c:col size="1-of-1" mdSize="1-of-6" lgSize="1-of-12">1-of-12</c:col>
+  <c:col size="1-of-1" mdSize="1-of-6" lgSize="1-of-12">1-of-12</c:col>
+  <c:col size="1-of-1" mdSize="1-of-6" lgSize="1-of-12">1-of-12</c:col>
+  <c:col size="1-of-1" mdSize="1-of-6" lgSize="1-of-12">1-of-12</c:col>
+  <c:col size="1-of-1" mdSize="1-of-6" lgSize="1-of-12">1-of-12</c:col>
+  <c:col size="1-of-1" mdSize="1-of-6" lgSize="1-of-12">1-of-12</c:col>
+  <c:col size="1-of-1" mdSize="1-of-6" lgSize="1-of-12">1-of-12</c:col>
+  <c:col size="1-of-1" mdSize="1-of-6" lgSize="1-of-12">1-of-12</c:col>
+  <c:col size="1-of-1" mdSize="1-of-6" lgSize="1-of-12">1-of-12</c:col>
 </c:grid>
 
 ```
 # Part 4 - Building An Accounts List App
 #### This app shows you how to use raw SLDS markup along with SLDSX components.
+
 ![image](accountsAppPic.png)
+
 SLDS framework provides a whole host of components that are not part of these sample components like: tables, headers and so on but we can use both togeather.
 In this example, we will build a simple Accounts app that shows list of accounts in a table.
 We'll use raw CSS instead of SLDSX components just to show that you can use it directly as well.
@@ -239,13 +242,15 @@ We'll use raw CSS instead of SLDSX components just to show that you can use it d
 2. Enter `AccountsController` as the name of the class.
 3. Paste the following code
 
-	```
+	```java
 	public class AccountsController {
-	  @AuraEnabled
-	  public static List<Account> getAccounts() {
-	    return [SELECT Id, name, industry, Type, NumberOfEmployees, TickerSymbol, Phone, BillingStreet, BillingCity, BillingState, BillingPostalCode
-	            FROM Account ORDER BY createdDate ASC];
-	  }   
+		@AuraEnabled
+		public static List<Account> getAccounts() {
+			return [SELECT Id, Name, Industry, Type, NumberOfEmployees,
+			TickerSymbol, Phone, BillingStreet, BillingCity,
+			BillingState, BillingPostalCode FROM Account ORDER BY
+			CreatedDate ASC];
+		}   
 	}
 	```
 4. Save it.
@@ -256,7 +261,7 @@ We'll use raw CSS instead of SLDSX components just to show that you can use it d
 2. Enter `AccountList` as the Bundle name
 3. Paste the following code:
 
-	```
+	```xml
 <aura:component controller="AccountsController">
 	  <aura:attribute name="accounts" type="List" />
 	  <aura:handler name="init" value="{!this}" action="{!c.doInit}" />
@@ -295,13 +300,12 @@ We'll use raw CSS instead of SLDSX components just to show that you can use it d
 
 	In the above code, replace the following line:
 
-	```
+	```xml
 	<! !!! -- REPLACE THIS WITH A BUTTON COMPONENT !!!!! -->
 	```
 	With:
 
-
-	```
+	```xml
 	<c:button data="{!account.Id}" press="{!c.myButtonHandler}" type="brand">Details</c:button>
 	```
 
@@ -311,18 +315,19 @@ We'll use raw CSS instead of SLDSX components just to show that you can use it d
 1. While in AccountList component, click on the `Controller` menu in the right-side panel.
 2. Copy paste the below code:
 
-	```
+	```javascript
 	({
-		 doInit : function(component, event, helper) {      
+		doInit : function(component, event, helper) {      
 			//Fetch the expense list from the Apex controller   
-	        helper.getAccountList(component);
-	    },
-        myButtonHandler: function(component, event, helper) {
-            //Get data via "data-data" attribute
-            alert(event.target.getAttribute("data-data") + " was passed");
-        }
+			helper.getAccountList(component);
+		},
+		myButtonHandler: function(component, event, helper) {
+			//Get data via "data-data" attribute
+			alert(event.target.getAttribute("data-data") + " was passed");
+		}
 	})
 	```
+
 3. Save it
 
 #### Step 4 - Create JS Helper
@@ -331,10 +336,10 @@ Helper is used to interact with the server.
 1. While in AccountList component, click on the `Helper` menu in the right-side panel.
 2. Copy paste the below code:
 
-	```
+	```javascript
 	({
-	     //Fetch the accounts from the Apex controller
-	    getAccountList: function(component) {
+	  //Fetch the accounts from the Apex controller
+	  getAccountList: function(component) {
 	        var action = component.get("c.getAccounts");
 
 	        //Set up the callback
@@ -347,25 +352,25 @@ Helper is used to interact with the server.
 	})
 	```
 
+
 3. Save it.
 
 #### Step 5 - Update Hello SLDSX.app
 1. Open `HelloSLDSX.app`
 2. Copy-paste the code below:
 
-	```
+	```xml
 <aura:application >
-    <ltng:require styles="/resource/slds/assets/styles/salesforce-lightning-design-system-ltng.css"/>    
-    <div class="slds">
-        <br/>
-        <c:grid>     
-            <c:col>
-                <c:AccountList />
-            </c:col>    
-        </c:grid>   
-    </div>
+	<ltng:require styles="/resource/slds/assets/styles/salesforce-lightning-design-system-ltng.css"/>    
+	<div class="slds">
+		<br/>
+		<c:grid>     
+			<c:col>
+				<c:AccountList />
+			</c:col>    
+		</c:grid>   
+	</div>
 </aura:application>
-
 	```
 3. Save it.
 
