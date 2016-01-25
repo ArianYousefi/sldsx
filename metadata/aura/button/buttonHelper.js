@@ -100,20 +100,22 @@
     setup: function(component) {
         // Replace the CDATA block with svg element
         // Workaround for bug in Aura Framework
-        
+          
         var svg = component.find("svg_content");   
         if (svg) {
-            var value = svg.getElement().innerText;
-            value = value.replace("", "");
+            var value = svg.getElement().innerHTML;
+            value = new DOMParser().parseFromString(value, "text/html");
+            value = value.documentElement.textContent;
             svg.getElement().innerHTML = value;
         }
         
         // for buttons w/ dropdown menu
         var svg2 = component.find("svg_menu_content");   
         if (svg2) {
-            var value = svg2.getElement().innerText;
-            value = value.replace("", "");
+            var value = svg2.getElement().innerHTML;
+            value = new DOMParser().parseFromString(value, "text/html");
+            value = value.documentElement.textContent;
             svg2.getElement().innerHTML = value;
         }
-    }
+    } 
 })
